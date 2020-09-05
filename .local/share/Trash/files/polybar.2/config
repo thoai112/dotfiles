@@ -1,0 +1,511 @@
+
+
+;################## Color Scheme ####################
+
+[colors]
+background = #50010101
+background-alt = #444
+foreground = #000
+foreground-alt = #555
+
+
+red         = #BD0404
+green       = #0E6713
+yellow      = #F0E921
+blue        = #30519A
+magenta     = #FF00FF
+cyan        = #00FFFF
+white       = #FFFFFF
+
+; #################### Bar launcher #########################
+
+[bar/launcher]
+width = 2%
+height = 24px
+offset-x = 3.0%
+offset-y = 7px
+radius = 12.3
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+padding-left = 2
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
+font-0 = Fira Code Nerd Font:pixelsize=8.7:style=Bold;1
+font-1 = Material Design Icons:pixelsize=13:style:Regular;1
+modules-left = 
+modules-center = simple_ws
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+top = true
+
+
+; #################### Bar songs #########################
+
+[bar/songs]
+width = 18%
+height = 24px
+offset-x = 61.8% 
+offset-y = 7px
+radius = 0
+fixed-center = true
+background = ${colors.background}
+foreground = #000000
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+font-0 = BreezeSans:pixelsize=10:style=Bold;-10
+font-1 =  Fira Code Nerd Font:pixelsize=9;1
+;font-2 = Material Design Icons:pixelsize=11:style:Regular;1
+font-2 = Font Awesome 5 Free:style=Solid:size=10;1
+modules-left = 
+modules-center = cpu volume memory
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+top = true
+
+; #################### Bar player #########################
+
+[bar/player]
+width = 5%
+height = 24px
+offset-x = 16.5% 
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+padding-left = 2
+padding-right = 2
+module-margin-left = 2
+module-margin-right = 0
+font-0 = Fira Code Nerd Font:pixelsize=8.7:style=Bold;1
+font-1 = Material Design Icons:pixelsize=13:style:Regular;1
+modules-left = 
+modules-center = launcher browser 
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+top = true
+
+
+; #################### Bar Left #########################
+
+[bar/left]
+width = 10%
+height = 24px
+offset-x = 5.5%
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+padding-left = 2
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
+font-0 = Fira Code Nerd Font:pixelsize=8.7:style=Bold;1
+font-1 = Material Design Icons:pixelsize=13:style:Regular;1
+modules-left = 
+modules-center = date sep time
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+top = true
+
+; ######################## Bar Center ########################
+
+[bar/center]
+width = 19%
+height = 24px
+offset-x = 40.2%
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+padding-left = 2
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
+font-0 = Fira Code Nerd Font:pixelsize=8.7:style=Bold;1
+font-1 = Material Design Icons:pixelsize=13:style:Regular;1
+modules-left =  
+modules-center = i3   
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+top = true
+
+
+; ###################### Bar Right ########################
+
+[bar/right]
+width = 13%
+height = 24px
+offset-x = 22.3%
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+padding-left = 0
+padding-right = 6
+module-margin-left = 1
+module-margin-right = 0
+font-0 =  Fira Code Nerd Font:pixelsize=8.7:style=Bold;1
+font-1 = Material Design Icons:pixelsize=13:style:Regular;1
+modules-center = mode title
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+top = true
+
+
+;tray-position = right
+;tray-detached = true
+;tray-maxsize =13
+;tray-transparent = false
+;tray-background = #1A2026
+;tray-scale = 0.98
+
+
+; ###################### Bar power ########################
+
+[bar/power]
+width = 10%
+height = 24px
+offset-x = 89.%
+offset-y = 7px
+radius = 10
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+padding-left = 1
+padding-right = 4.4
+module-margin-left = 0
+module-margin-right = 0
+font-0 = BreezeSans:pixelsize=10:style=Bold;-10
+font-1 =  Fira Code Nerd Font:pixelsize=9;1
+font-2 = Font Awesome 5 Free:style=Solid:size=10;1
+modules-center =  battery sep wlan sep 
+wm-restack = i3
+override-redirect = true
+cursor-click = pointer
+cursor-scroll = default
+top = true
+
+
+;tray-position = right
+;tray-detached = true
+;tray-maxsize =13
+;tray-transparent = false
+;tray-background = #1A2026
+;tray-scale = 0.98
+
+;#################### Modules ####################
+[module/mode]
+
+type = internal/i3
+format =<label-mode>
+wrapping-scroll = false
+
+;#################### Modules ####################
+
+[module/i3]
+
+type = internal/i3
+format =<label-state>
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode-padding = 1
+label-mode-foreground = ${colors.foreground}
+label-mode-background = ${colors.background}
+
+; focused = Active workspace on focused monitor 
+label-focused = ""
+label-focused-padding = 1
+label-focused-font = 2
+label-focused-foreground = #BD0404
+
+; unfocused = Inactive workspace on any monitor 
+label-unfocused = ""
+label-unfocused-foreground = #FFFFFF
+label-unfocused-padding = 1
+label-unfocused-font = 2
+
+; urgent = Workspace with urgency hint set
+label-urgent = ""
+label-urgent-foreground = #BD0404
+label-urgent-font = 2
+label-urgent-padding = 1
+
+;#################### Modules ####################
+[module/date]
+type = internal/date
+
+interval = 4
+
+date = %d-%m%
+date-alt = %A, %d %B %Y
+
+format-prefix = " "
+label =%date%
+label-font = 2
+label-foreground = #D8DEE9 
+format-foreground = #D8DEE9
+
+;#################### Modules ####################
+[module/power-menu]
+
+type = custom/script
+
+exec = echo ""
+format-foreground =#800000
+click-left = /home/tuyetlien/.config/polybar/scripts/powermenu.sh &
+
+;#################### Modules ####################
+
+[module/browser]
+type = custom/text
+content = " "
+content-font = 2
+content-padding = 1
+content-background = ${colors.background}
+content-foreground = #BD0404
+click-left = chromium &
+click-right = firefox &
+
+;#################### Modules ####################
+[module/time]
+type = internal/date
+
+interval = 4
+time = %H:%M
+time-alt = %H:%M
+
+label = %time% 
+label-font = 2
+label-foreground = #D8DEE9
+
+;#################### Modules ####################
+[module/title]
+type = internal/xwindow
+label = %title%
+label-foreground = #FFFFFF
+format = <label>
+label-maxlen = 80
+label-empty = "Yoroshiku!"
+label-empty-foreground = #FFFFFF
+format-padding = 1
+
+;#################### Modules ####################
+[module/volume]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+use-ui-max = true
+
+interval = 5
+format-volume = <ramp-volume> <label-volume>
+format-volume-font = 2
+
+label-volume = %percentage%%
+label-volume-foreground = #9e6ffe
+label-volume-font = 2
+
+label-muted =  
+label-muted-foreground = #666
+label-muted-font = 2
+
+; Only applies if <ramp-volume> is used
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = #9e6ffe
+
+; Right and Middle click (unreleased)
+click-right = pavucontrol &
+; click-middle =
+;#################### Modules ####################
+[module/cpu]
+
+
+type = internal/cpu
+
+interval = 6
+format = <label>
+
+format-prefix = "" 
+label = "%{T2}%percentage%%%{T2} "
+label-foreground =#0066cc
+format-foreground =#0066cc
+
+;#################### Modules ####################
+[module/memory]
+
+type = internal/memory
+
+interval = 6
+format-prefix = " "
+label = "%{T2}%percentage_used%%%{T-} " 
+label-foreground =#ac3973
+format-foreground =#ac3973
+
+;#################### Modules ####################
+[module/launcher]
+
+type = custom/text
+
+content = ""
+content-background = ${colors.background}
+content-foreground = #BD0404
+content-padding = 1
+content-font = 2
+click-left = rofi -show drun -eh 2 -bw 0 &
+click-right = telegram-desktop &
+
+;#################### Modules ####################
+[module/battery]
+type = internal/battery
+
+full-at = 99
+
+battery = BAT0
+adapter = AC
+poll-interval = 5
+time-format = %H:%M
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-full = <ramp-capacity> <label-full>
+
+label-charging = %percentage:2%%
+label-charging-font = 2
+
+label-charging-foreground = #82b414
+label-discharging = %percentage:2%%
+label-discharging-foreground = #fd971f
+label-discharging-font = 2
+
+; Available tokens:
+;   %percentage% (default) - is set to 100 if full-at is reached
+;   %percentage_raw% (unreleased)
+label-full = %percentage:2%%
+label-full-foreground = #fd971f
+label-full-font = 2
+; Only applies if <ramp-capacity> is used
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = #fd971f
+
+; Only applies if <bar-capacity> is used
+bar-capacity-width = 10
+
+; Only applies if <animation-charging> is used
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-foreground = #82b414
+; Framerate in milliseconds
+animation-charging-framerate = 200
+
+; Only applies if <animation-discharging> is used
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-3 = 
+animation-discharging-4 = 
+animation-discharging-foreground = #fd971f
+; Framerate in milliseconds
+animation-discharging-framerate = 500
+
+;#################### Modules ####################
+
+[module/wlan]
+type = internal/network
+interface = wlan0
+
+label-connected = %essid%
+format-connected = <ramp-signal>
+label-connected-foreground = #82b414
+label-connected-font = 2
+format-connected-font = 2
+
+format-disconnected = <label-disconnected>
+label-disconnected = Not connected
+label-disconnected-foreground = #f92672
+label-disconnected-background = #2E3440
+label-disconnected-font = 2
+format-disconnected-font = 2
+
+ramp-signal-foreground = #82b414
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-5 = 
+
+;#################### Modules ####################
+
+[module/wshook]
+type = custom/ipc
+hook-0 = ~/.config/scripts/pbwsindi
+initial = 1
+hook-font = 2
+hook-foreground = #FFFFFF
+scroll-up = i3-msg workspace next
+scroll-down = i3-msg workspace prev
+click-left = ~/.config/scripts/prevws
+
+;#################### Modules ####################
+[module/simple_ws]
+type = custom/script
+exec = ~/.config/polybar/scripts/ws.sh -s
+interval = 1
+format-foreground = #FFFFFF
+format-font = 2
+
+;#################### Modules ####################
+[module/decor-glyph]
+type = custom/text
+content-foreground = #777
+margin = 0
+
+;#################### Modules ####################
+[module/sep]
+inherit = module/decor-glyph
+content = " "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

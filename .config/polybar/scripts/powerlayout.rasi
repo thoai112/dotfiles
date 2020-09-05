@@ -1,0 +1,58 @@
+@import "/home/tuyetlien/.config/polybar/scripts/colors.rasi"
+
+
+* {
+  /* General */
+  text-font:                            "System San Francisco 12";
+  icon-font:                            "Material Design Icons 16";
+ 
+  option-6-listview-spacing:            7px;
+  menu-window-padding:                  1px 9px;
+  menu-element-padding:                 10px 0px 10px -10px;
+  
+}
+
+#window {
+  width: 4%;
+  height: 25%;
+  anchor: south;
+  location:south;
+  x-offset: 46.5%;
+  y-offset: -70%;
+  border: 2px;
+  border-radius: 10px;
+  border-color: #FFFFFF;
+ 
+}
+
+* {
+  background-color: @xbg;
+  text-color: @xfg;
+  font: @icon-font;
+  border: 0px;
+  padding: 5;
+}
+
+#horibox {
+  children: [ listview ];
+}
+
+#listview {
+  layout: vertical;
+}
+
+
+#window {
+  padding: @menu-window-padding;
+  children: [ inputbar, horibox ];
+}
+
+#inputbar {
+  enabled: false;
+}
+
+#element {
+  font: @icon-font;
+  padding: @menu-element-padding;
+ 
+}

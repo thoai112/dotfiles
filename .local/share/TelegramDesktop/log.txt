@@ -1,0 +1,40 @@
+[2020.09.05 10:46:42] Launched version: 2002000, install beta: [FALSE], alpha: 0, debug mode: [FALSE]
+[2020.09.05 10:46:42] Executable dir: /usr/bin/, name: telegram-desktop
+[2020.09.05 10:46:42] Initial working dir: /home/tuyetlien/
+[2020.09.05 10:46:42] Working dir: /home/tuyetlien/.local/share/TelegramDesktop/
+[2020.09.05 10:46:42] Command line: telegram-desktop
+[2020.09.05 10:46:42] Executable path before check: /usr/bin/telegram-desktop
+[2020.09.05 10:46:42] Logs started
+[2020.09.05 10:46:42] Launcher filename: telegramdesktop.desktop
+[2020.09.05 10:46:42] Connecting local socket to /run/user/1000/3c6927a3378610c0044d22199ecd90ef-{87A94AB0-E370-4cde-98D3-ACC110C5967D}...
+[2020.09.05 10:46:42] This is the only instance of Telegram, starting server and app...
+[2020.09.05 10:46:42] Moved logging from '/home/tuyetlien/.local/share/TelegramDesktop/log_start0.txt' to '/home/tuyetlien/.local/share/TelegramDesktop/log.txt'!
+[2020.09.05 10:46:42] Primary screen DPI: 96
+[2020.09.05 10:46:42] App Info: reading settings...
+[2020.09.05 10:46:42] App Info: reading encrypted settings...
+[2020.09.05 10:46:42] Lang Info: Loaded cached, keys: 2723
+[2020.09.05 10:46:42] OpenAL Logging Level: (not set)
+[2020.09.05 10:46:42] Audio Playback Devices: Built-in Audio Analog Stereo
+[2020.09.05 10:46:42] Audio Playback Default Device: Built-in Audio Analog Stereo
+[2020.09.05 10:46:42] Audio Capture Devices: Built-in Audio Analog Stereo;Monitor of Built-in Audio Analog Stereo
+[2020.09.05 10:46:42] Audio Capture Default Device: Built-in Audio Analog Stereo
+[2020.09.05 10:46:42] System tray available: [FALSE]
+[2020.09.05 10:46:42] Not using D-Bus global menu.
+[2020.09.05 10:46:42] Not using Unity launcher counter.
+[2020.09.05 10:46:42] App Info: reading accounts info...
+[2020.09.05 10:46:42] App Info: reading encrypted info...
+[2020.09.05 10:46:42] App Info: reading map...
+[2020.09.05 10:46:42] App Info: reading encrypted map...
+[2020.09.05 10:46:42] App Info: reading encrypted user settings...
+[2020.09.05 10:46:42] App Info: encrypted user settings read.
+[2020.09.05 10:46:42] App Info: reading encrypted mtp data...
+[2020.09.05 10:46:42] MTP Info: read keys, current: 5, to destroy: 0
+[2020.09.05 10:46:42] Map read time: 1
+[2020.09.05 10:46:42] App Info: reading encrypted mtp config...
+[2020.09.05 10:46:42] Export Info: Destroy top bar by controller removal.
+[2020.09.05 10:46:44] Message Info: bad message notification received (error_code 33) for msg_id = 6868845004127684648, seq_no = 80
+[2020.09.05 10:46:44] Message Info: bad message notification received (error_code 33) for msg_id = 6868845004400819116, seq_no = 82
+[2020.09.05 10:46:44] Message Info: bad message notification received, msgId 6868845004400819116, error_code 33
+[2020.09.05 10:46:53] Error: could not locate 'background.jpg' in a zip file.
+[2020.09.05 10:47:08] Error: could not locate 'background.jpg' in a zip file.
+[2020.09.05 10:47:14] Api::Updates prevents quit, sending offline status...
