@@ -1,1 +1,0 @@
-/home/tuyetlien/.dot/.bashrc
